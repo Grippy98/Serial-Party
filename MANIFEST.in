@@ -1,0 +1,7 @@
+include AGENTS.md CHANGELOG.md CONTRIBUTING.md repository.yaml
+recursive-include docs *.md *.png
+recursive-include examples *.json
+recursive-include host *.py *.md
+recursive-include dashboard *.js *.cjs *.md
+recursive-include serial_party_app *.py *.js *.css *.html *.yaml *.txt *.md Dockerfile .dockerignore
+recursive-include tests *.py

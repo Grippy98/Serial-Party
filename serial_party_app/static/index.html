@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Serial Party</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script src="static/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="heading"><h1>Serial Party</h1><span id="mode" class="badge">Read only</span></div>
+    <label class="board-field"><span>Board</span><select id="board" disabled aria-label="Board"><option>Loading boards…</option></select></label>
+    <button id="mode-button" type="button" disabled>Request control</button>
+  </header>
+  <main id="terminal" aria-label="Serial console"><p class="empty-state">Loading boards…</p></main>
+  <footer><span id="hint" role="status">Read-only view. Requesting control will not interrupt another controller.</span></footer>
+</body>
+</html>
