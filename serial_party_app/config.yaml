@@ -1,0 +1,40 @@
+name: Serial Party
+version: "0.1.0"
+slug: serial_party
+description: Shared serial consoles with read-only monitoring and explicit control
+url: https://github.com/Grippy98/Serial-Party
+homeassistant: "2026.11.0"
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: auto
+init: true
+ingress: true
+ingress_port: 8099
+panel_icon: mdi:console
+panel_title: Serial Party
+panel_admin: true
+host_network: false
+ports: {}
+hassio_api: false
+homeassistant_api: false
+auth_api: false
+options:
+  upstream_host: 192.0.2.10
+  upstream_username: serialparty
+  upstream_password: ""
+  boards:
+    - id: board-a
+      name: Board A
+      monitor_port: 7681
+      control_port: 7682
+schema:
+  upstream_host: str
+  upstream_username: str
+  upstream_password: password
+  boards:
+    - id: str
+      name: str
+      monitor_port: port
+      control_port: port

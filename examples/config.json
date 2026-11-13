@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "broker_port": 7820,
+  "broker_secondary_port": 7821,
+  "listen_host": "127.0.0.1",
+  "writers": ["operator", "hermes", "codex", "webcontrol"],
+  "boards": [
+    {
+      "id": "board-a",
+      "name": "Board A",
+      "device": "/dev/serial/by-id/usb-Example_Board_A-if00",
+      "baud": 115200,
+      "monitor_port": 7681,
+      "control_port": 7682
+    },
+    {
+      "id": "board-b",
+      "name": "Board B",
+      "device": "/dev/serial/by-id/usb-Example_Board_B-if00",
+      "baud": 115200,
+      "monitor_port": 7683,
+      "control_port": 7684
+    }
+  ]
+}
